@@ -1,10 +1,8 @@
 {
-  "file": "montreal-skyline.jpg",
-  "title": "Montreal Skyline from Mont Royal golden hour",
-  "author": "Wilfredor",
-  "source": "https://commons.wikimedia.org/wiki/File:Montreal_Skyline_from_Mont_Royal_golden_hour.jpg",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Montreal_Skyline_from_Mont_Royal_golden_hour.jpg/1280px-Montreal_Skyline_from_Mont_Royal_golden_hour.jpg",
-  "usage": "Unmodified Wikimedia thumbnail; responsive crop and gradient applied in CSS. City photograph, not a photograph of the conference venue."
+  "file": "aaai27-montreal.jpg",
+  "source": "https://aaai.org/conference/aaai/aaai-27/",
+  "download_url": "https://aaai.org/wp-content/uploads/2026/03/montreal-river-sunset-with-city-lights-urban-buildings-scaled.jpg",
+  "source_role": "Featured Montreal city photograph (og:image) on the official AAAI-27 homepage",
+  "license": "Not specified on the source page; no CC0 claim.",
+  "usage": "Official-site photograph selected at the workshop organizer’s request. Original image bytes preserved; responsive crop and gradient applied in CSS."
 }
