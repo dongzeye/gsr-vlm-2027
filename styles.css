@@ -52,7 +52,7 @@ svg { display: block; }
 .hero h1 { font-size: clamp(36px, 3.6vw, 48px); letter-spacing: -1.6px; line-height: 1.17; margin: 20px 0; }
 
 .hero-actions { display: flex; gap: 26px; align-items: center; margin-top: 24px; }
-.hero-meta { display: flex; gap: 40px; margin-top: 28px; font-size: 12px; }
+.hero-meta { display: flex; flex-wrap: wrap; gap: 40px; margin-top: 28px; font-size: 12px; }
 .meta-label { display: block; font: 9px var(--mono); letter-spacing: .7px; color: var(--muted); margin-bottom: 6px; }
 .hero-visual { min-width: 0; }
 .figure-top { display: flex; justify-content: space-between; font: 8px var(--mono); letter-spacing: .5px; padding-top: 12px; color: var(--muted); }
@@ -68,6 +68,28 @@ svg { display: block; }
 .figure-bottom p { font-size: 10px; color: var(--muted); margin-top: 3px; }
 .assemble-button { border: 1px solid #b7b9ae; background: transparent; padding: 8px 11px; font-size: 11px; display: flex; gap: 16px; align-items: center; }
 .assemble-button:hover { background: #e9ebe2; }
+
+/* AAAI host city */
+.conference-section { padding-bottom: 32px; }
+.conference-banner { position: relative; margin: 0; overflow: hidden; background: #263a3c; }
+.conference-banner > img { display: block; width: 100%; height: 240px; object-fit: cover; object-position: center 65%; }
+.conference-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 15%, rgba(13, 25, 26, .82) 100%); pointer-events: none; }
+.conference-caption { position: absolute; inset: auto 28px 24px; z-index: 1; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; color: #fff; }
+.conference-caption .eyebrow { color: #fff; letter-spacing: 1.4px; }
+.conference-caption h2 { margin-top: 5px; font-size: 30px; line-height: 1.2; letter-spacing: -.5px; }
+.conference-caption p { margin-top: 8px; font-size: 12px; }
+.conference-link { display: inline-flex; align-items: center; gap: 18px; flex-shrink: 0; padding: 9px 13px; border: 1px solid rgba(255,255,255,.65); font-size: 12px; background: rgba(13,25,26,.3); }
+.conference-link:hover { background: rgba(13,25,26,.65); }
+.conference-link:focus-visible { outline-color: #fff; }
+.photo-credit { margin-top: 7px; text-align: right; font-size: 10px; color: var(--muted); }
+.photo-credit a { text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 580px) {
+  .conference-section { padding-bottom: 24px; }
+  .conference-banner > img { height: 250px; }
+  .conference-caption { inset: auto 18px 18px; align-items: flex-start; flex-direction: column; gap: 14px; }
+  .conference-caption h2 { font-size: 26px; }
+  .conference-caption p { font-size: 11px; }
+}
 
 /* Overview and topics */
 .about-section { border-top: 1px solid var(--line); }
@@ -129,6 +151,7 @@ img[alt="Tianyu Shi"] { object-position: center 20%; }
 .dates-card dd { margin: 0; color: var(--muted); }
 .submission-status { font-size: 11px; color: var(--accent); }
 .dates-card > p { font-size: 12px; color: var(--muted); margin: 10px 0 15px; }
+.dates-card > p a { text-decoration: underline; text-underline-offset: 3px; }
 
 /* Competition */
 .challenge-section { background: #edf0e8; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
